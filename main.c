@@ -16,5 +16,6 @@ int main() {
     int b=6;
     int sum = a+b;
     printf("Sum is %d", sum);
+    //toto je test
     return 0;
 }//1
