@@ -119,7 +119,7 @@ void temperature()
             break;
         case 2:
             printf("Enter temperature in Celsius: ");
-            scanf("%f", &celsius);
+            scanf("%f", &celsius); //strtof -> converts string to float
             //celsius -> kelvin [add 273.15]
             kelvin = celsius + abs(absolute_zero);
             printf("Temperature in Kelvin: %f\n", kelvin);
