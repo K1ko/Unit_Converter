@@ -93,8 +93,8 @@ void currency()
 void length()
 {
     int choice_in, choice_out;
-    int value;
-    printf("Choose input unit:\n");
+    float value;
+    printf("####################################Lenght converter####################################\n");
     printf("1. Kilometer\n");
     printf("2. Meter\n");
     printf("3. Decimeter\n");
@@ -106,36 +106,521 @@ void length()
     printf("9. Yard\n");
     printf("10. Foot\n");
     printf("11. Inch\n");
+    printf("\n");
+    printf("Choose input unit: ");
+    printf("\n");
     scanf("%d", &choice_in);
     switch(choice_in)
     {
-        case '1' :
-                printf("Enter value in kilometers: ");
-                scanf("%d ", &value);
+        case 1:
+                printf("Enter value in kilometers :  ");
+                scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*1000);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*10000);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*100000);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*1000000);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*1000000000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*1000000000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*1093.61);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*3280.84);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*39370.1);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
                 break;
-        case '2' :
-        break;
-        case '3' :
-        break;
-        case '4' :
-        break;
-        case '5' :
-        break;
-        case '6' :
-        break;
-        case '7' :
-        break;
-        case '8' :
-        break;
-        case '9' :
-        break;
-        case '10' :
-        break;
-        case '11' :
-        break;
+        case 2:
+                printf("Enter value in meters :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*10);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*100);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*1000);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*1000000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*1000000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*1.09361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*3.28084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*39.3701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 3:
+                printf("Enter value in decimeters :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.0001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.1);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*10);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*100);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*100000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*100000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.0000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.109361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.328084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*3.93701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 4:
+                printf("Enter value in centimeters :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f  \n", value*0.00001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.01);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*0.1);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*10);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*10000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*10000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.00000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.0109361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.0328084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*0.393701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 5:
+                printf("Enter value in millimeters :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.000001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.001);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*0.01);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*0.1);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*1000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*1000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.00109361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.00328084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*0.0393701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 6:
+                printf("Enter value in micrometers :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.000000001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.000001);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*0.00001);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*0.0001);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*0.001);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*1000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000000000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.00000109361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.00000328084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*0.0000393701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 7:
+                printf("Enter value in nanometers :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.000000000001);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.000000001);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*0.00000001);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*0.0000001);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*0.000001);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*0.001);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000000000000621371192);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.00000000109361);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.00000000328084);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*0.0000000393701);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 8:
+                printf("Enter value in miles :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*1.60934);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*1609.34);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*16093.4);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*160934);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*1609340);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*1609340000);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*1609340000000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*1760);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*5280);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*63360);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 9:
+                printf("Enter value in yards :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.0009144);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.9144);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*9.144);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*91.44);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*914.4);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*914400);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*914400000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000568182);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*3);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*36);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 10:    
+                printf("Enter value in feet :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.0003048);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.3048);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*3.048);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*30.48);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*304.8);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*304800);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*304800000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.000189394);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.333333);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value*12);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;  
+        case 11:
+                printf("Enter value in inches :  ");
+                scanf("%f ", &value);
+                printf("\n");
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilometers: %.2f \n", value*0.0000254);
+                        break;
+                    case 2 :
+                        printf("Value in meters: %.2f \n", value*0.0254);
+                        break;
+                    case 3 :
+                        printf("Value in decimeters: %.2f \n", value*0.254);
+                        break;
+                    case 4 :
+                        printf("Value in centimeters: %.2f \n", value*2.54);
+                        break;
+                    case 5 :
+                        printf("Value in millimeters: %.2f \n", value*25.4);
+                        break;
+                    case 6 :
+                        printf("Value in micrometers: %.2f \n", value*25400);
+                        break;
+                    case 7 :
+                        printf("Value in nanometers: %.2f \n", value*25400000);
+                        break;
+                    case 8 :
+                        printf("Value in miles: %.2f \n", value*0.0000157828);
+                        break;
+                    case 9 :
+                        printf("Value in yards: %.2f \n", value*0.0277778);
+                        break;
+                    case 10 :
+                        printf("Value in feet: %.2f \n", value*0.0833333);
+                        break;
+                    case 11 :
+                        printf("Value in inches: %.2f \n", value);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
         default :
-        printf("Zadaj cislo od 1 do 11\n");
+            printf("Invalid choice \n");
+            break;
     }
 }
 void weight()
