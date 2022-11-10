@@ -91,7 +91,53 @@ void currency()
     }
 }
 void length()
-{}
+{
+    int choice_in, choice_out;
+    int value;
+    printf("Choose input unit:\n");
+    printf("1. Kilometer\n");
+    printf("2. Meter\n");
+    printf("3. Decimeter\n");
+    printf("4. Centimeter\n");
+    printf("5. Millimeter\n");
+    printf("6. Micrometer\n");
+    printf("7. Nanometer\n");
+    printf("8. Mile\n");
+    printf("9. Yard\n");
+    printf("10. Foot\n");
+    printf("11. Inch\n");
+    scanf("%d", &choice_in);
+    switch(choice_in)
+    {
+        case '1' :
+                printf("Enter value in kilometers: ");
+                scanf("%d ", &value);
+                printf("Choose output unit:\n");
+                break;
+        case '2' :
+        break;
+        case '3' :
+        break;
+        case '4' :
+        break;
+        case '5' :
+        break;
+        case '6' :
+        break;
+        case '7' :
+        break;
+        case '8' :
+        break;
+        case '9' :
+        break;
+        case '10' :
+        break;
+        case '11' :
+        break;
+        default :
+        printf("Zadaj cislo od 1 do 11\n");
+    }
+}
 void weight()
 {}
 void temperature()
