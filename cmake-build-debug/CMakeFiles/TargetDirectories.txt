@@ -1,0 +1,3 @@
+/Users/kristianko/CLionProjects/unit_converter/cmake-build-debug/CMakeFiles/unit_converter.dir
+/Users/kristianko/CLionProjects/unit_converter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kristianko/CLionProjects/unit_converter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
