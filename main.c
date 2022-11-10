@@ -12,5 +12,9 @@
  */
 int main() {
     printf("Hello, World!\n");
+    int a=1;
+    int b=6;
+    int sum = a+b;
+    printf("Sum is %d", sum);
     return 0;
 }//1
