@@ -1,12 +1,13 @@
 #include <stdio.h>
 /*##############################################
  #                                             #
- #  This is a comment                          #
  #                                             #
- #                                             #
- #                                             #
- #                                             #
-                                               #
+ #            UNIT CONVERTER                   #
+ #           Kristián Červenka                 #
+ #           Matej Drienovský                  #
+ #      Faculty of Informatics and Information #
+ #               Technologies                  #
+ #         Slovak Technical University         #
 //##############################################
  */
 int main() {
