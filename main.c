@@ -12,7 +12,9 @@
  */
 #include <math.h>
 #include <stdlib.h>
-#define absolute_zero abs(-273.15) // Absolute zero in Celsius
+#define absolute_zero -273.15 // Absolute zero in Celsius
+#define n_val 5/9  // Value for converting Fahrenheit to Celsius
+#define Rankine_scale 459.67 // Rankine scale
 void currency()
 {}
 void length()
@@ -23,6 +25,7 @@ void temperature()
 {
     float celsius, fahrenheit, kelvin;
     int choice;
+    //choose a unit
     printf("Temperature converter\n");
     printf("1. Celsius to Fahrenheit\n");
     printf("2. Celsius to Kelvin\n");
@@ -36,38 +39,44 @@ void temperature()
     {
         case 1:
             printf("Enter temperature in Celsius: ");
-            scanf("%f", &celsius);
+            strtof("%f", &celsius);
+            //fahrenheit -> celsius [multiply by 1.8,or 9/5, then add 32]
             fahrenheit = (celsius * 9/5) + 32;
             printf("Temperature in Fahrenheit: %f\n", fahrenheit);
             break;
         case 2:
             printf("Enter temperature in Celsius: ");
             scanf("%f", &celsius);
-            kelvin = celsius + absolute_zero;
+            //celsius -> kelvin [add 273.15]
+            kelvin = celsius + abs(absolute_zero);
             printf("Temperature in Kelvin: %f\n", kelvin);
             break;
         case 3:
             printf("Enter temperature in Fahrenheit: ");
             scanf("%f", &fahrenheit);
-            celsius = (fahrenheit - 32) * 5/9;
+            //fahrenheit -> celsius [subtract 32, then multiply by 5/9]
+            celsius = (fahrenheit - 32) * n_val;
             printf("Temperature in Celsius: %f\n", celsius);
             break;
         case 4:
             printf("Enter temperature in Fahrenheit: ");
             scanf("%f", &fahrenheit);
-            kelvin = (fahrenheit + 459.67) * 5/9;
+            //fahrenheit -> kelvin [temperature_fahrenheit + 459.67] * 5/9(n_val)
+            kelvin = (fahrenheit + Rankine_scale) * n_val;
             printf("Temperature in Kelvin: %f\n", kelvin);
             break;
         case 5:
             printf("Enter temperature in Kelvin: ");
             scanf("%f", &kelvin);
-            celsius = kelvin - 273.15;
+            //kelvin -> celsius [subtract 273.15]
+            celsius = kelvin - abs(absolute_zero);
             printf("Temperature in Celsius: %f\n", celsius);
             break;
         case 6:
             printf("Enter temperature in Kelvin: ");
             scanf("%f", &kelvin);
-            fahrenheit = kelvin * 9/5 - 459.67;
+            //kelvin -> fahrenheit [temperature_kelvin * 9/5, or 1.8, then subtract 459.67]
+            fahrenheit = kelvin * 9/5 - Rankine_scale;
             printf("Temperature in Fahrenheit: %f\n", fahrenheit);
             break;
         default:
@@ -75,16 +84,10 @@ void temperature()
     }
 }
 int main() {
-    printf("Hello, World!\n");
-    /*int a=1;
-    int b=6;
-    int sum = a+b;
-    printf("Sum is %d", sum);*/
-    //toto je test
-    char vetva;
+    char branch;
     do {
-        scanf("%c", &vetva); //načítanie vetvy
-        switch (vetva) {
+        scanf("%c", &branch); //načítanie vetvy
+        switch (branch) {
             case 'v': //postupné volanie funkcii
                 currency();
                 break;
@@ -99,6 +102,6 @@ int main() {
                 break;
 //test.2
         }
-    } while (vetva != 'k');
+    } while (branch != 'k');
     return 0;
 }//1
