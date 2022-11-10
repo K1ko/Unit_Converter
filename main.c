@@ -15,8 +15,81 @@
 #define absolute_zero -273.15 // Absolute zero in Celsius
 #define n_val 5/9  // Value for converting Fahrenheit to Celsius
 #define Rankine_scale 459.67 // Rankine scale
+//Probably add more constants for other scales cause of market demand
+/*##############################################
+ #                                             #
+ #                                             #
+ #            FUTURE IDEAS                     #
+ #    Add live stock market watch (Kiko)       #
+ #                                             #
+ #      Faculty of Informatics and Information #
+ #               Technologies                  #
+ #         Slovak Technical University         #
+//##############################################
+ */
+
 void currency()
-{}
+{
+    float amount;
+    float dollar, euro, pound, yen, yuan;
+    int choice;
+    printf("####################################Currency converter####################################");
+    printf("\nEnter 1 for converting from EUR to USD, GBP, JPY, CNY");
+    printf("\nEnter 2 for converting from USD to EUR, GBP, JPY, CNY");
+    printf("\nEnter 3 for converting from GBP to EUR, USD, JPY, CNY");
+    printf("\nEnter 4 for converting from JPY to EUR, USD, GBP, CNY");
+    printf("\nEnter 5 for converting from CNY to EUR, USD, GBP, JPY");
+    printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+    printf("Enter the amount you'd like to convert:\n");
+    scanf("%f", &amount);
+    switch(choice)
+    {
+        case 1:
+            // EUR to USD, GBP, JPY, CNY
+            dollar = amount * 1.11;
+            pound = amount * 0.88;
+            yen = amount * 120.78;
+            yuan = amount * 7.65;
+            printf("The amount of %.2f EUR is equal to %.2f USD, %.2f GBP, %.2f JPY, %.2f CNY.", amount, dollar, pound, yen, yuan);
+            break;
+        case 2:
+            //USD to GBP, JPY, CNY,EUR
+            euro = amount * 0.90;
+            pound = amount * 0.79;
+            yen = amount * 109.11;
+            yuan = amount * 6.91;
+            printf("The amount of %.2f USD is equal to %.2f EUR, %.2f GBP, %.2f JPY, %.2f CNY.", amount, euro, pound, yen, yuan);
+            break;
+        case 3:
+            //GBP to EUR, USD, JPY, CNY
+            euro = amount * 1.13;
+            dollar = amount * 1.26;
+            yen = amount * 137.51;
+            yuan = amount * 8.70;
+            printf("The amount of %.2f GBP is equal to %.2f EUR, %.2f USD, %.2f JPY, %.2f CNY.", amount, euro, dollar, yen, yuan);
+            break;
+        case 4:
+            //JPY to EUR, USD, GBP, CNY
+            euro = amount * 0.0086;
+            dollar = amount * 0.0091;
+            pound = amount * 0.0073;
+            yuan = amount * 0.064;
+            printf("The amount of %.2f JPY is equal to %.2f EUR, %.2f USD, %.2f GBP, %.2f CNY.", amount, euro, dollar, pound, yuan);
+            break;
+        case 5:
+            //CNY to EUR, USD, GBP, JPY
+            euro = amount * 0.13;
+            dollar = amount * 0.14;
+            pound = amount * 0.11;
+            yen = amount * 15.62;
+            printf("The amount of %.2f CNY is equal to %.2f EUR, %.2f USD, %.2f GBP, %.2f JPY.", amount, euro, dollar, pound, yen);
+            break;
+        default:
+            printf("Invalid choice");
+            break;
+    }
+}
 void length()
 {}
 void weight()
