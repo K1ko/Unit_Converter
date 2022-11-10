@@ -41,7 +41,7 @@ int main() {
             case 't':
                 temperature();
                 break;
-
+//test.2
         }
     } while (vetva != 'k');
     return 0;
