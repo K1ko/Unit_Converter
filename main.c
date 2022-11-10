@@ -39,7 +39,7 @@ void temperature()
     {
         case 1:
             printf("Enter temperature in Celsius: ");
-            strtof("%f", &celsius);
+            scanf("%f", &celsius); //could have used strtof() but it's not supported by CodeBlocks
             //fahrenheit -> celsius [multiply by 1.8,or 9/5, then add 32]
             fahrenheit = (celsius * 9/5) + 32;
             printf("Temperature in Fahrenheit: %f\n", fahrenheit);
