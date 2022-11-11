@@ -92,6 +92,7 @@ void currency()
 }
 void length()
 {
+    system("cls");
     int choice_in, choice_out;
     float value;
     printf("####################################Lenght converter####################################\n");
@@ -106,16 +107,14 @@ void length()
     printf("9. Yard\n");
     printf("10. Foot\n");
     printf("11. Inch\n");
-    printf("\n");
+    printf("##########################################################################################\n");
     printf("Choose input unit: ");
-    printf("\n");
     scanf("%d", &choice_in);
     switch(choice_in)
     {
         case 1:
                 printf("Enter value in kilometers :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -161,7 +160,6 @@ void length()
         case 2:
                 printf("Enter value in meters :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -207,7 +205,6 @@ void length()
         case 3:
                 printf("Enter value in decimeters :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -253,7 +250,6 @@ void length()
         case 4:
                 printf("Enter value in centimeters :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -299,7 +295,6 @@ void length()
         case 5:
                 printf("Enter value in millimeters :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -345,7 +340,6 @@ void length()
         case 6:
                 printf("Enter value in micrometers :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -391,7 +385,6 @@ void length()
         case 7:
                 printf("Enter value in nanometers :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -437,7 +430,6 @@ void length()
         case 8:
                 printf("Enter value in miles :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -483,7 +475,6 @@ void length()
         case 9:
                 printf("Enter value in yards :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -529,7 +520,6 @@ void length()
         case 10:    
                 printf("Enter value in feet :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -575,7 +565,6 @@ void length()
         case 11:
                 printf("Enter value in inches :  ");
                 scanf("%f ", &value);
-                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -624,7 +613,259 @@ void length()
     }
 }
 void weight()
-{}
+{
+    system("cls");
+    float value;
+    int choice_out, choice_in;
+    printf("#################################### Weight converter ####################################\n");
+    printf("1 - Kilograms\n");
+    printf("2 - Grams\n");
+    printf("3 - Milligrams\n");
+    printf("4 - Micrograms\n");
+    printf("5 - Nanograms\n");
+    printf("6 - Pounds\n");
+    printf("7 - Tons\n");
+    printf("##########################################################################################\n");
+    printf("\nChoose input unit: ");
+    scanf("%d", &choice_in);
+    switch (choice_in)
+    {
+        case 1:
+                printf("Enter value in kilograms :  ");
+                scanf("%f ", &value);
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilograms: %.2f \n", value);
+                        break;
+                    case 2 :
+                        printf("Value in grams: %.2f \n", value*1000);
+                        break;
+                    case 3 :
+                        printf("Value in milligrams: %.2f \n", value*1000000);
+                        break;
+                    case 4 :
+                        printf("Value in micrograms: %.2f \n", value*1000000000);
+                        break;
+                    case 5 :
+                        printf("Value in nanograms: %.2f \n", value*1000000000000);
+                        break;
+                    case 6 :
+                        printf("Value in pounds: %.2f \n", value*2.20462);
+                        break;
+                    case 7 :
+                        printf("Value in tons: %.2f \n", value*0.00110231);
+                        break;
+                    default :
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+        case 2:
+                printf("Enter value in grams :  ");
+                scanf("%f ", &value);
+                printf("Choose output unit:\n");
+                scanf("%d", &choice_out);
+                switch(choice_out)
+                {
+                    case 1 :
+                        printf("Value in kilograms: %.2f \n", value*0.001);
+                        break;
+                    case 2 :
+                        printf("Value in grams: %.2f \n", value);
+                        break;
+                    case 3 :
+                        printf("Value in milligrams: %.2f \n", value*1000);
+                        break;
+                    case 4 :
+                        printf("Value in micrograms: %.2f \n", value*1000000);
+                        break;
+                    case 5 :
+                        printf("Value in nanograms: %.2f \n", value*1000000000);
+                        break;
+                    case 6 :
+                        printf("Value in pounds: %.2f \n", value*0.00220462);
+                        break;
+                    case 7 :
+                        printf("Value in tons: %.2f \n", value*0.00000110231);
+                        break;
+                    default : 
+                        printf("Invalid choice \n");
+                        break;
+                }
+                break;
+                case 3 : 
+                        printf("Enter value in milligrams :  ");
+                        scanf("%f ", &value);
+                        printf("Choose output unit:\n");
+                        scanf("%d", &choice_out);
+                        switch(choice_out)
+                        {
+                            case 1 :
+                                printf("Value in kilograms: %.2f \n", value*0.000001);
+                                break;
+                            case 2 :
+                                printf("Value in grams: %.2f \n", value*0.001);
+                                break;
+                            case 3 :
+                                printf("Value in milligrams: %.2f \n", value);
+                                break;
+                            case 4 :
+                                printf("Value in micrograms: %.2f \n", value*1000);
+                                break;
+                            case 5 :
+                                printf("Value in nanograms: %.2f \n", value*1000000);
+                                break;
+                            case 6 :
+                                printf("Value in pounds: %.2f \n", value*0.00000220462);
+                                break;
+                            case 7 :
+                                printf("Value in tons: %.2f \n", value*0.00000000110231);
+                                break;
+                            default :
+                                printf("Invalid choice \n");
+                                break;
+                        }
+                        break;
+                case 4 :
+                        printf("Enter value in micrograms :  ");
+                        scanf("%f ", &value);
+                        printf("Choose output unit:\n");
+                        scanf("%d", &choice_out);
+                        switch(choice_out)
+                        {
+                            case 1 :
+                                printf("Value in kilograms: %.2f \n", value*0.000000001);
+                                break;
+                            case 2 :
+                                printf("Value in grams: %.2f \n", value*0.000001);
+                                break;
+                            case 3 :
+                                printf("Value in milligrams: %.2f \n", value*0.001);
+                                break;
+                            case 4 :
+                                printf("Value in micrograms: %.2f \n", value);
+                                break;
+                            case 5 :
+                                printf("Value in nanograms: %.2f \n", value*1000);
+                                break;
+                            case 6 :
+                                printf("Value in pounds: %.2f \n", value*0.00000000220462);
+                                break;
+                            case 7 :
+                                printf("Value in tons: %.2f \n", value*0.00000000000110231);
+                                break;
+                            default :
+                                printf("Invalid choice \n");
+                                break;
+                        }
+                        break;
+                case 5 :
+                        printf("Enter value in nanograms :  ");
+                        scanf("%f ", &value);
+                        printf("Choose output unit:\n");
+                        scanf("%d", &choice_out);
+                        switch(choice_out)
+                        {
+                            case 1 :
+                                printf("Value in kilograms: %.2f \n", value*0.000000000001);
+                                break;
+                            case 2 :
+                                printf("Value in grams: %.2f \n", value*0.000000001);
+                                break;
+                            case 3 :
+                                printf("Value in milligrams: %.2f \n", value*0.000001);
+                                break;
+                            case 4 :
+                                printf("Value in micrograms: %.2f \n", value*0.001);
+                                break;
+                            case 5 :
+                                printf("Value in nanograms: %.2f \n", value);
+                                break;
+                            case 6 :
+                                printf("Value in pounds: %.2f \n", value*0.00000000000220462);
+                                break;
+                            case 7 :
+                                printf("Value in tons: %.2f \n", value*0.00000000000000110231);
+                                break;
+                            default :
+                                printf("Invalid choice \n");
+                                break;
+                        }
+                        break;
+                case 6 :
+                        printf("Enter value in pounds :  ");
+                        scanf("%f ", &value);
+                        printf("Choose output unit:\n");
+                        scanf("%d", &choice_out);
+                        switch(choice_out)
+                        {
+                            case 1 :
+                                printf("Value in kilograms: %.2f \n", value*0.453592);
+                                break;
+                            case 2 :
+                                printf("Value in grams: %.2f \n", value*453.592);
+                                break;
+                            case 3 :
+                                printf("Value in milligrams: %.2f \n", value*453592);
+                                break;
+                            case 4 :
+                                printf("Value in micrograms: %.2f \n", value*453592000);
+                                break;
+                            case 5 :
+                                printf("Value in nanograms: %.2f \n", value*453592000000);
+                                break;
+                            case 6 :
+                                printf("Value in pounds: %.2f \n", value);
+                                break;
+                            case 7 :
+                                printf("Value in tons: %.2f \n", value*0.0005);
+                                break;
+                            default :
+                                printf("Invalid choice \n");
+                                break;
+                        }
+                        break;
+                case 7 :
+                        printf("Enter value in tons :  ");
+                        scanf("%f ", &value);
+                        printf("Choose output unit:\n");
+                        scanf("%d", &choice_out);
+                        switch(choice_out)
+                        {
+                            case 1 :
+                                printf("Value in kilograms: %.2f \n", value*907.185);
+                                break;
+                            case 2 :
+                                printf("Value in grams: %.2f \n", value*907185);
+                                break;
+                            case 3 :
+                                printf("Value in milligrams: %.2f \n", value*907185000);
+                                break;
+                            case 4 :
+                                printf("Value in micrograms: %.2f \n", value*907185000000);
+                                break;
+                            case 5 :
+                                printf("Value in nanograms: %.2f \n", value*907185000000000);
+                                break;
+                            case 6 :
+                                printf("Value in pounds: %.2f \n", value*2000);
+                                break;
+                            case 7 :
+                                printf("Value in tons: %.2f \n", value);
+                                break;
+                            default :
+                                printf("Invalid choice \n");
+                                break;
+                        }
+                        break;
+                default :
+                        printf("Invalid choice \n");
+                        break;                    
+    }
+}
 void temperature()
 {
     float celsius, fahrenheit, kelvin;
@@ -737,6 +978,15 @@ void temperature()
     }
 }
 int main() {
+    system("cls");
+    printf("#################################### Welcome to the converter! ####################################\n");
+    printf("Press the key to choose your option:\n");
+    printf("v - currency\n");
+    printf("o - length\n");
+    printf("h - weight\n");
+    printf("t - temperature\n");
+    pritnf("k - exit\n");
+    printf("##########################################################################################\n");
     char branch;
     do {
         scanf("%c", &branch); //načítanie vetvy
