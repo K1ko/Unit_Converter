@@ -94,8 +94,6 @@ void length()
 {
     int choice_in, choice_out;
     float value;
-    system("cls");
-    system("color 1");
     printf("####################################Lenght converter####################################\n");
     printf("1. Kilometer\n");
     printf("2. Meter\n");
@@ -117,6 +115,7 @@ void length()
         case 1:
                 printf("Enter value in kilometers :  ");
                 scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -162,6 +161,7 @@ void length()
         case 2:
                 printf("Enter value in meters :  ");
                 scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -207,6 +207,7 @@ void length()
         case 3:
                 printf("Enter value in decimeters :  ");
                 scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -252,6 +253,7 @@ void length()
         case 4:
                 printf("Enter value in centimeters :  ");
                 scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -297,6 +299,7 @@ void length()
         case 5:
                 printf("Enter value in millimeters :  ");
                 scanf("%f ", &value);
+                printf("\n");
                 printf("Choose output unit:\n");
                 scanf("%d", &choice_out);
                 switch(choice_out)
@@ -625,61 +628,110 @@ void weight()
 void temperature()
 {
     float celsius, fahrenheit, kelvin;
-    int choice;
+    int choice,choice_out;
     //choose a unit
     printf("Temperature converter\n");
-    printf("1. Celsius to Fahrenheit\n");
-    printf("2. Celsius to Kelvin\n");
-    printf("3. Fahrenheit to Celsius\n ");
-    printf("4. Fahrenheit to Kelvin\n");
-    printf("5. Kelvin to Celsius\n");
-    printf("6. Kelvin to Fahrenheit\n");
+    printf("1. Celsius\n");
+    //printf("2. Celsius to Kelvin\n");
+    printf("3. Fahrenheit\n ");
+    //printf("4. Fahrenheit to Kelvin\n");
+    printf("5. Kelvin\n");
+    //printf("6. Kelvin to Fahrenheit\n");
     printf("Choose your option:\n");
     scanf("%d", &choice);
-    switch(choice)
-    {
+    switch(choice) {
         case 1:
             printf("Enter temperature in Celsius: ");
             scanf("%f", &celsius); //could have used strtof() but it's not supported by CodeBlocks
             //fahrenheit -> celsius [multiply by 1.8,or 9/5, then add 32]
-            fahrenheit = (celsius * 9/5) + 32;
-            printf("Temperature in Fahrenheit: %f\n", fahrenheit);
+            //fahrenheit = (celsius * 9/5) + 32;
+            //int choice_out;
+            printf("Choose output unit:\n");
+            printf("1.Fahrenheit\n");
+            printf("2.Kelvin\n");
+            scanf( "%d", &choice_out);
+            switch (choice_out)
+            {
+                case 1:
+                    printf("Value in Fahrenheit: %.2f \n", (celsius * 9/5) + 32);
+                    break;
+                case 2:
+                    printf("Value in Kelvin: %.2f \n", celsius + abs(absolute_zero));
+                    break;
+                default:
+                    printf("Invalid choice \n");
+                    break;
+            }
             break;
-        case 2:
+       /* case 2:
             printf("Enter temperature in Celsius: ");
             scanf("%f", &celsius); //strtof -> converts string to float
             //celsius -> kelvin [add 273.15]
             kelvin = celsius + abs(absolute_zero);
             printf("Temperature in Kelvin: %f\n", kelvin);
-            break;
+            break;*/
         case 3:
             printf("Enter temperature in Fahrenheit: ");
             scanf("%f", &fahrenheit);
             //fahrenheit -> celsius [subtract 32, then multiply by 5/9]
-            celsius = (fahrenheit - 32) * n_val;
-            printf("Temperature in Celsius: %f\n", celsius);
+            //celsius = (fahrenheit - 32) * n_val;
+            //int choice_out;
+            printf("Choose output unit:\n");
+            printf("1. Celsius\n");
+            printf("2. Kelvin\n");
+            scanf( "%d", &choice_out);
+            switch (choice_out)
+            {
+                case 1:
+                    printf("Value in Celsius: %.2f \n", (fahrenheit - 32) * n_val);
+                    break;
+                case 2:
+                    printf("Value in Kelvin: %.2f \n", (fahrenheit - 32) * n_val + abs(absolute_zero));
+                    break;
+                default:
+                    printf("Invalid choice \n");
+                    break;
+            }
+            //rintf("Temperature in Celsius: %f\n", celsius);
             break;
-        case 4:
+        /*case 4:
             printf("Enter temperature in Fahrenheit: ");
             scanf("%f", &fahrenheit);
             //fahrenheit -> kelvin [temperature_fahrenheit + 459.67] * 5/9(n_val)
             kelvin = (fahrenheit + Rankine_scale) * n_val;
             printf("Temperature in Kelvin: %f\n", kelvin);
-            break;
+            break;*/
         case 5:
             printf("Enter temperature in Kelvin: ");
             scanf("%f", &kelvin);
             //kelvin -> celsius [subtract 273.15]
-            celsius = kelvin - abs(absolute_zero);
-            printf("Temperature in Celsius: %f\n", celsius);
+            //celsius = kelvin - abs(absolute_zero);
+            int choice_out;
+            printf("Choose output unit:\n");
+            printf("1. Celsius\n");
+            printf("2. Fahrenheit\n");
+            scanf( "%d", &choice_out);
+            switch (choice_out)
+            {
+                case 1:
+                    printf("Value in Celsius: %.2f \n", kelvin - abs(absolute_zero));
+                    break;
+                case 2:
+                    printf("Value in Fahrenheit: %.2f \n", (kelvin - abs(absolute_zero)) * 9/5 + 32);
+                    break;
+                default:
+                    printf("Invalid choice \n");
+                    break;
+            }
+            //printf("Temperature in Celsius: %f\n", celsius);
             break;
-        case 6:
+        /*case 6:
             printf("Enter temperature in Kelvin: ");
             scanf("%f", &kelvin);
             //kelvin -> fahrenheit [temperature_kelvin * 9/5, or 1.8, then subtract 459.67]
             fahrenheit = kelvin * 9/5 - Rankine_scale;
             printf("Temperature in Fahrenheit: %f\n", fahrenheit);
-            break;
+            break;*/
         default:
             printf("Invalid option\n");
     }
