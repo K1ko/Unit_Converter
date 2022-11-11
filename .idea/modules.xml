@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/unit_converter.iml" filepath="$PROJECT_DIR$/.idea/unit_converter.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Unit_converter.iml" filepath="$PROJECT_DIR$/.idea/Unit_converter.iml" />
+>>>>>>> 5696526 (skuska)
     </modules>
   </component>
 </project>
