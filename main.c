@@ -985,7 +985,6 @@ int main() {
     printf("o - length\n");
     printf("h - weight\n");
     printf("t - temperature\n");
-    pritnf("k - exit\n");
     printf("##########################################################################################\n");
     char branch;
     do {
