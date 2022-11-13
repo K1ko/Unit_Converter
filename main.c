@@ -287,7 +287,7 @@ void length()
         case 2:
                 printf("Enter value in meters :  ");
                 scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Choose output unit: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
