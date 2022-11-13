@@ -216,7 +216,7 @@ void currency()
             printf("Invalid choice");
             break;
     }
-}
+} //just another tryout
 void length() //length converter
 {
     int choice_in, choice_out;
