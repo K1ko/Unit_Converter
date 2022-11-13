@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/matej/Desktop/STU FIIT/vlastne/programko/Unit_converter/build",
+  "command": "C:\\MinGW\\bin\\gcc.exe   -O3 -DNDEBUG -std=gnu99 -o CMakeFiles\\unit_converter.dir\\main.c.obj -c \"C:\\Users\\matej\\Desktop\\STU FIIT\\vlastne\\programko\\Unit_converter\\main.c\"",
+  "file": "C:/Users/matej/Desktop/STU FIIT/vlastne/programko/Unit_converter/main.c"
+}
+]

@@ -1,0 +1,3 @@
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E rm -f CMakeFiles\unit_converter.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\unit_converter.dir/objects.a @CMakeFiles\unit_converter.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\unit_converter.dir/objects.a -Wl,--no-whole-archive -o unit_converter.exe -Wl,--out-implib,libunit_converter.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\unit_converter.dir\linklibs.rsp

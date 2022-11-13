@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "unit_converter"
+			"path" : "unit_converter.exe"
+		},
+		{
+			"path" : "unit_converter.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
+					"fragment" : "-O3 -DNDEBUG"
 				},
 				{
 					"fragment" : "-std=gnu99"
@@ -62,18 +65,22 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "unit_converter",
-	"nameOnDisk" : "unit_converter",
+	"nameOnDisk" : "unit_converter.exe",
 	"paths" : 
 	{
 		"build" : ".",
