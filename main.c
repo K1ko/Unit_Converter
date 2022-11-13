@@ -217,7 +217,7 @@ void currency()
             break;
     }
 }
-void length()
+void length() //length converter
 {
     int choice_in, choice_out;
     float value;
