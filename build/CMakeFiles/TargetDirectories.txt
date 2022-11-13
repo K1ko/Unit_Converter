@@ -1,0 +1,3 @@
+C:/Users/matej/Desktop/STU FIIT/vlastne/programko/Unit_converter/build/CMakeFiles/unit_converter.dir
+C:/Users/matej/Desktop/STU FIIT/vlastne/programko/Unit_converter/build/CMakeFiles/edit_cache.dir
+C:/Users/matej/Desktop/STU FIIT/vlastne/programko/Unit_converter/build/CMakeFiles/rebuild_cache.dir
