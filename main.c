@@ -220,7 +220,7 @@ void currency()
 //another tryout
 void length() //length converter
 {
-    system("cls");
+    //system("cls");
     int choice_in, choice_out;
     float value;
     printf("####################################Lenght converter####################################\n");
@@ -241,9 +241,15 @@ void length() //length converter
     switch(choice_in)
     {
         case 1:
+<<<<<<< HEAD
                 printf("Enter your value in Kilometers: ");
                 scanf("%f", &value);
                 printf("Enter your choice: ");
+=======
+                printf("Enter value in kilometers : ");
+                scanf("%f ", &value);
+                printf("Choose output unit:\n");
+>>>>>>> :rocket:
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -742,7 +748,7 @@ void length() //length converter
 }
 void weight()
 {
-    system("cls");
+    //system("cls");
     float value;
     int choice_out, choice_in;
     printf("#################################### Weight converter ####################################\n");
@@ -996,6 +1002,7 @@ void weight()
 }
 void temperature()
 {
+    printf("#################################### Temperature converter ####################################\n");
     float celsius, fahrenheit, kelvin;
     int choice,choice_out;
     //choose a unit
@@ -1106,7 +1113,7 @@ void temperature()
     }
 }
 int main() {
-    system("cls");
+    //system("cls");
     printf("#################################### Welcome to the converter! ####################################\n");
     printf("Press the key to choose your option:\n");
     printf("v - currency\n");
