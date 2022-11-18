@@ -770,7 +770,7 @@ void weight()
                 printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
-                {
+                { //add more cases
                     case 1 :
                         printf("Value in kilograms: %.2f \n", value);
                         break;
