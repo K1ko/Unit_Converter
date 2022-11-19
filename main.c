@@ -216,10 +216,11 @@ void currency()
             printf("Invalid choice");
             break;
     }
-}
-void length()
+} //just another tryout
+//another tryout
+void length() //length converter
 {
-    system("cls");
+    //system("cls");
     int choice_in, choice_out;
     float value;
     printf("####################################Lenght converter####################################\n");
@@ -240,9 +241,15 @@ void length()
     switch(choice_in)
     {
         case 1:
-                printf("Enter value in kilometers :  ");
+<<<<<<< HEAD
+                printf("Enter your value in Kilometers: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
+=======
+                printf("Enter value in kilometers : ");
                 scanf("%f ", &value);
                 printf("Choose output unit:\n");
+>>>>>>> :rocket:
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -285,9 +292,9 @@ void length()
                 }
                 break;
         case 2:
-                printf("Enter value in meters :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit: ");
+                printf("Enter your value in Meters: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -330,9 +337,9 @@ void length()
                 }
                 break;
         case 3:
-                printf("Enter value in decimeters :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Decimeters: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -375,9 +382,9 @@ void length()
                 }
                 break;
         case 4:
-                printf("Enter value in centimeters :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Centimeters: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -420,9 +427,9 @@ void length()
                 }
                 break;
         case 5:
-                printf("Enter value in millimeters :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Millimeters: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -465,9 +472,9 @@ void length()
                 }
                 break;
         case 6:
-                printf("Enter value in micrometers :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Micrometers: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -510,9 +517,9 @@ void length()
                 }
                 break;
         case 7:
-                printf("Enter value in nanometers :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Nanometers: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -555,9 +562,9 @@ void length()
                 }
                 break;
         case 8:
-                printf("Enter value in miles :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Miles: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -600,9 +607,9 @@ void length()
                 }
                 break;
         case 9:
-                printf("Enter value in yards :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Yards: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -645,9 +652,9 @@ void length()
                 }
                 break;
         case 10:    
-                printf("Enter value in feet :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Feet: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -690,9 +697,9 @@ void length()
                 }
                 break;  
         case 11:
-                printf("Enter value in inches :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Inches: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -741,7 +748,7 @@ void length()
 }
 void weight()
 {
-    system("cls");
+    //system("cls");
     float value;
     int choice_out, choice_in;
     printf("#################################### Weight converter ####################################\n");
@@ -758,12 +765,12 @@ void weight()
     switch (choice_in)
     {
         case 1:
-                printf("Enter value in kilograms :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Kilograms: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
-                {
+                { //add more cases
                     case 1 :
                         printf("Value in kilograms: %.2f \n", value);
                         break;
@@ -791,9 +798,9 @@ void weight()
                 }
                 break;
         case 2:
-                printf("Enter value in grams :  ");
-                scanf("%f ", &value);
-                printf("Choose output unit:\n");
+                printf("Enter your value in Grams: ");
+                scanf("%f", &value);
+                printf("Enter your choice: ");
                 scanf("%d", &choice_out);
                 switch(choice_out)
                 {
@@ -824,9 +831,9 @@ void weight()
                 }
                 break;
                 case 3 : 
-                        printf("Enter value in milligrams :  ");
-                        scanf("%f ", &value);
-                        printf("Choose output unit:\n");
+                        printf("Enter your value in Milligrams: ");
+                        scanf("%f", &value);
+                        printf("Enter your choice: ");
                         scanf("%d", &choice_out);
                         switch(choice_out)
                         {
@@ -857,9 +864,9 @@ void weight()
                         }
                         break;
                 case 4 :
-                        printf("Enter value in micrograms :  ");
-                        scanf("%f ", &value);
-                        printf("Choose output unit:\n");
+                        printf("Enter your value in Micrograms: ");
+                        scanf("%f", &value);
+                        printf("Enter your choice: ");
                         scanf("%d", &choice_out);
                         switch(choice_out)
                         {
@@ -890,9 +897,9 @@ void weight()
                         }
                         break;
                 case 5 :
-                        printf("Enter value in nanograms :  ");
-                        scanf("%f ", &value);
-                        printf("Choose output unit:\n");
+                        printf("Enter your value in Nanograms: ");
+                        scanf("%f", &value);
+                        printf("Enter your choice: ");
                         scanf("%d", &choice_out);
                         switch(choice_out)
                         {
@@ -923,9 +930,9 @@ void weight()
                         }
                         break;
                 case 6 :
-                        printf("Enter value in pounds :  ");
-                        scanf("%f ", &value);
-                        printf("Choose output unit:\n");
+                        printf("Enter your value in Pounds: ");
+                        scanf("%f", &value);
+                        printf("Enter your choice: ");
                         scanf("%d", &choice_out);
                         switch(choice_out)
                         {
@@ -956,9 +963,9 @@ void weight()
                         }
                         break;
                 case 7 :
-                        printf("Enter value in tons :  ");
-                        scanf("%f ", &value);
-                        printf("Choose output unit:\n");
+                        printf("Enter your value in Tons: ");
+                        scanf("%f", &value);
+                        printf("Enter your choice: ");
                         scanf("%d", &choice_out);
                         switch(choice_out)
                         {
@@ -995,6 +1002,7 @@ void weight()
 }
 void temperature()
 {
+    printf("#################################### Temperature converter ####################################\n");
     float celsius, fahrenheit, kelvin;
     int choice,choice_out;
     //choose a unit
@@ -1105,7 +1113,7 @@ void temperature()
     }
 }
 int main() {
-    system("cls");
+    //system("cls");
     printf("#################################### Welcome to the converter! ####################################\n");
     printf("Press the key to choose your option:\n");
     printf("v - currency\n");
